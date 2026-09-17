@@ -1,0 +1,440 @@
+/* Базовый сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Стили для шапки и навигации */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    z-index: 10;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Секция с видео */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 50px; /* Отступ для фиксированной шапки */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Белый цвет шрифта */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+.video-overlay h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.video-overlay p {
+    font-size: 18px;
+}
+
+/* Стили для секций */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, button {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Стили для шапки */
+header {
+    padding: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Стили для секции контактов */
+#contacts {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+/* Центрирование контактной формы */
+#contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    min-height: 100vh; /* Обеспечивает высоту на весь экран */
+}
+
+.contact-form {
+    max-width: 500px; /* Ограничиваем ширину формы для лучшей читаемости */
+    text-align: center; /* Центрируем текст внутри формы */
+}
+
+.contact-form .title h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form .input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для колонки с контактными данными */
+.contact-details {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contact-details .tel, .contact-details .email {
+    font-size: 18px;
+    color: #007BFF;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.contact-details .tel:hover, .contact-details .email:hover {
+    text-decoration: underline;
+}
+
+.contact-details h6 {
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Секция с отделами */
+.item h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.item h4 span {
+    color: #007BFF;
+}
+
+.item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.item ul li {
+    margin: 5px 0;
+}
+
+.item ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.item ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для социальных ссылок */
+.social-links a {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-links .whatsapp {
+    background-color: #25D366;
+}
+
+.social-links .telegram {
+    background-color: #0088cc;
+}
+
+.social-links a:hover {
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Центрируемый контейнер */
+.contact-form-container {
+    display: flex;
+    justify-content: center; /* Выравниваем по горизонтали */
+    align-items: center;     /* Выравниваем по вертикали */
+    height: 100vh;           /* Высота на весь экран */
+    padding: 20px;           /* Отступы по бокам */
+    background-color: #fff;
+}
+
+/* Колонка с формой */
+.contact-form {
+    max-width: 500px; /* Ограничиваем ширину формы */
+    text-align: center; /* Центрируем текст внутри формы */
+}
+
+.contact-form h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form .input input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Контейнер секции контактов */
+#contacts {
+    padding: 60px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    align-items: flex-start; /* Выравнивает элементы по верхнему краю */
+}
+
+/* Контейнер формы и контактных данных */
+.contact-form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Добавляем пространство между колонками */
+    width: 100%;
+    flex-wrap: wrap; /* Для адаптивности на маленьких экранах */
+}
+
+/* Контактная форма */
+.contact-form {
+    flex: 1 1 45%; /* Формируем ширину блока, можно менять проценты */
+    min-width: 300px; /* Минимальная ширина, чтобы не сжималась */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Контактные данные */
+.contact-details {
+    flex: 1 1 45%; /* Формируем ширину блока */
+    min-width: 300px; /* Минимальная ширина */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Для мобильных устройств добавляем адаптивность */
+@media (max-width: 768px) {
+    #contacts {
+        flex-direction: column; /* Расположение в колонку на маленьких экранах */
+    }
+    
+    .contact-form-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contact-form, .contact-details {
+        flex: 1 1 100%; /* Растягиваем на всю ширину */
+    }
+}
+/* Стили для всех полей ввода */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* отступы между элементами формы */
+}
+
+/* Стили для активного состояния и фокуса */
+input:focus, select:focus {
+    border-color: #007bff; /* Цвет границы при фокусе */
+    outline: none; /* Убираем стандартное обведение */
+}
+
+/* Стили для селекта */
+select {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/* Для кастомных стрелок в селекте */
+select::-ms-expand {
+    display: none; /* Убирает стрелку в IE */
+}
+
+select option {
+    padding: 10px; /* Добавляет отступы в выпадающем списке */
+}
+
+

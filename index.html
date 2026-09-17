@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics.kz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showSection('calculate-section')">
+    <!-- Верхняя навигация -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Logistics.kz</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#calculate">Рассчитать стоимость</a></li>
+                    <li><a href="#track">Отследить груз</a></li>
+                    <li><a href="#request">Оставить заявку</a></li>
+                    <li><a href="#contacts">Контакты</a></li> <!-- Ссылка на секцию контактов -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Секция с фоновым видео -->
+    <section id="home" class="video-section">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="images/112.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+        <div class="video-overlay">
+            <h2>Добро пожаловать в Logistics.kz</h2>
+            <p>Ваш надежный партнер в логистике</p>
+        </div>
+    </section>
+
+    <!-- Секция для расчета стоимости -->
+    <section id="calculate" class="calculate-section">
+        <h2>Рассчитать стоимость</h2>
+        <form>
+            <label for="from-city">Откуда</label>
+            <input type="text" id="from-city" placeholder="Город отправления" list="cities" required>
+            <label for="to-city">Куда</label>
+            <input type="text" id="to-city" placeholder="Город доставки" list="cities" required>
+            <label for="weight">Вес (кг)</label>
+            <input type="number" id="weight" placeholder="От 500кг" min="500" required>
+            <button type="submit">Рассчитать</button>
+        </form>
+        <p id="cost-result"></p>
+    </section>
+    
+
+    <!-- Секция для отслеживания груза -->
+    <section id="track" class="track-section">
+        <div class="track-container">
+            <h2>Отследить груз</h2>
+            <form>
+                <label for="tracking-number">Номер отслеживания</label>
+                <input type="text" id="tracking-number" placeholder="Введите номер отслеживания" required>
+                <button type="submit">Отследить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Секция для отправки заявки -->
+    <section id="request" class="request-section">
+        <h2>Оставить заявку</h2>
+        <form>
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <label for="email">Ваш Email</label>
+            <input type="email" id="email" placeholder="Ваш Email" required>
+            <textarea placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </section>
+
+    <!-- Секция для контактов -->
+    <section id="contacts">
+        <div class="container">
+            <!-- Центрированный контейнер -->
+            <div class="contact-form-container">
+                <!-- Колонка с формой контакта -->
+                <div class="col contact-form">
+                    <h1><span>Есть вопросы?</span><br> Мы готовы ответить!</h1>
+                    <form>
+                        <div class="input">
+                            <input type="text" name="name" placeholder="Как вас зовут?" autocomplete="off" required>
+                        </div>
+                        <div class="input">
+                            <input type="tel" name="tel" placeholder="Номер телефона" autocomplete="off" required>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="cargo-type" placeholder="Тип груза" autocomplete="off" required>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="pickup-address" placeholder="Адрес отправки" autocomplete="off" required>
+                        </div>
+                        <div class="input">
+                            <select name="delivery-method" required>
+                                <option value="" disabled selected>Выберите способ доставки</option>
+                                <option value="land">Наземный транспорт</option>
+                                <option value="air">Авиа</option>
+                                <option value="sea">Морской транспорт</option>
+                            </select>
+                        </div>
+                        <button class="btn">Узнать стоимость</button>
+                    </form>
+                </div>
+
+                <!-- Колонка с контактными данными -->
+                <div class="col contact-details">
+                    <a href="tel:+77473100085" class="tel">+7 747 310 0085</a>
+                    <a href="mailto:info@Logistics.kz" class="email">info@Logistics.kz</a>
+                    <h6>РК, г. Алматы, БЦ Жетысу, пр. Райымбека 211, 3 этаж</h6>
+
+                    <div class="flex wrap">
+                        <div class="item">
+                            <h4>Административный отдел</h4>
+                            <ul>
+                                <li><a href="tel:+77473100085">+7 747 310 0085</a></li>
+                                <li><a href="tel:+77273100085">+7 727 310 0085</a></li>
+                                <li><a href="mailto:info@Logistics.kz">info@Logistics.kz</a></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <h4>Производственный отдел</h4>
+                            <ul>
+                                <li><a href="tel:+77073518752">+7 707 351 8752</a></li>
+                                <li><a href="tel:+77273100085">+7 727 310 0085</a></li>
+                                <li><a href="mailto:pd@zhebelogistics.kz">pd@Logistics.kz</a></li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <h4>Коммерческий отдел</h4>
+                            <ul>
+                                <li><a href="tel:+77019077770">+7 701 907 7770</a></li>
+                                <li><a href="tel:+77273100085">+7 727 310 0085</a></li>
+                                <li><a href="mailto:bd@zhebelogistics.kz">bd@Logistics.kz</a></li>
+                            </ul>
+                        </div>
+                        <div class="item social-links">
+                            <a href="https://wa.me/77472837975" class="whatsapp">WhatsApp</a>
+                            <a href="https://t.me/+77472837975" class="telegram">Telegram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Logistics.kz. Все права защищены.</p>
+    </footer>
+
+    <datalist id="cities">
+        <!-- Основные города Казахстана с логистическими примечаниями -->
+        <option value="Алматы - главный логистический центр Казахстана">
+        <option value="Астана - столица и центр деловой активности">
+        <option value="Ақтау - важный порт на Каспийском море">
+        <option value="Атырау - нефтяная столица Казахстана">
+        <option value="Орал - граница с Россией, удобный для международных перевозок">
+        <option value="Семей - крупный железнодорожный узел">
+        <option value="Қызылорда - промышленный и транспортный центр">
+        <option value="Қостанай - аграрный регион с развитой логистикой">
+        <option value="Петропавл - северный торговый центр Казахстана">
+        <option value="Көкшетау - логистический узел для центрального Казахстана">
+    
+        <!-- Дополнительные логистические хабы и порты -->
+        <option value="Хоргос - сухой порт для транзита в Китай">
+        <option value="Жезказган - логистический центр Центрального Казахстана">
+        <option value="Шымкент - распределительный центр на юге">
+        <option value="Туркестан - новый транспортный узел">
+        <option value="Актобе - западный логистический центр">
+    
+        <!-- Творческие логистические локации -->
+        <option value="Транзит-Сити - центр международных перевозок">
+        <option value="Порт Караван - крупный транспортный терминал">
+        <option value="Логистический узел Восток - удобен для транзита в Китай и Россию">
+    </datalist>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
